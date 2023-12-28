@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Git Hub Information</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <style>
+                .error-message {
+            color: red;
+            margin-top: 5px; /* Adjust as needed */
+        }
+
+                .heading-container {
+            margin-right: 20px; 
+            margin-left: 20px;
+        }
+        h5 {
+            color: blueviolet;
+            margin-bottom: 5px;
+        }
+
+        .url-container {
+            margin-left: 20px; /* Set margin to zero for the URL container */
+   
+        }
+            </style>
+    </head>
+
+    <body style="background-color: aquamarine;">
+        <br>
+        
+        <div class="d-flex flex-column" style="width: 500px; margin: auto">
+            <h1 class="card" style="width: 500px; margin: auto; padding: 10px; color: red;">Find Git Hub Information</h1>
+            <br>
+            <input class="card" id="inputValue" type="text" name="first_input" id="" placeholder="Enter username" style="padding: 5px;">
+            <br>
+            <div class="d-flex flex-column" style="float: left;">
+                <button class="btn"  onclick="getValue()" style="background-color: orange; width: 200px; font-weight: bold;">Click To Find Details</button>
+                <div id="errorContainer" class="error-message"></div>
+            </div>
+            
+        </div>
+        <br>
+
+       
+        <div class="card" style="width: 350px; height: 540px; border: 2px solid black; margin: auto; border-radius: 10px; overflow: hidden; position: relative;">
+            <div style="height: 100px; background-color: blue;">
+                <div style="text-align: center; margin-top: 30px;">
+                    <img id="userImage" >
+                </div>
+            </div>
+        
+            <br>
+            <br>
+            <div style="text-align: center;">
+                <h3 style="font-weight: bold;" id="bioHeading"></h3>
+                <p id="bio" style="text-align: justify; font-size: 12; margin: 10px; padding: 10px; font-weight: bold; font-family: 'Times New Roman', Times, serif;"></p>
+            </div>
+
+            <div class="d-flex flex-row" style="margin: 10px; padding: 10px;" >
+        
+            
+                    
+                    <div class="d-flex flex-column heading-container">
+                        <h5 style="color: blueviolet;" id="nameHeading"></h5>
+
+                        <p id="yourName" style="white-space: nowrap; color: orangered;"></p>
+                    </div>
+                   
+                
+        
+                  <div class="d-flex flex-column heading-container">
+                    <h5 style="color: blueviolet;" id="companyHeading"></h5>
+                    <p id="companyName" style="white-space: nowrap; color: orangered;"></p>
+                  </div>
+            
+                 
+                
+
+            
+                    
+                
+            </div>
+            <div class="d-flex flex-row" style="margin-left: 20px; margin-right: 20px;">
+
+                <div class="d-flex flex-column  url-container">
+                    <h5 style="color: blueviolet;" id="urlHeading"></h5>
+                    <p id="yourURL" style="white-space: normal;"></p>
+                </div>
+            </div>
+        </div>
+               
+        
+
+
+        <scrip  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" >
+
+        </script>
+
+        <script src="js/sample.js"></script>
+    </body>
+
+</html>
