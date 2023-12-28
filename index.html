@@ -26,6 +26,10 @@
             margin-left: 20px; /* Set margin to zero for the URL container */
    
         }
+        #userCard {
+            display: none; /* Initially hide the card container */
+          
+        }
             </style>
     </head>
 
@@ -46,10 +50,10 @@
         <br>
 
        
-        <div class="card" style="width: 350px; height: 540px; border: 2px solid black; margin: auto; border-radius: 10px; overflow: hidden; position: relative;">
+        <div class="card" id="userCard" style="width: 350px; height: 540px; border: 2px solid black; margin: auto; border-radius: 10px; overflow: hidden; position: relative;">
             <div style="height: 100px; background-color: blue;">
-                <div style="text-align: center; margin-top: 30px;">
-                    <img id="userImage" >
+                <div style="text-align: center; ">
+                    <img id="userImage" style="margin-top: 30px;">
                 </div>
             </div>
         
