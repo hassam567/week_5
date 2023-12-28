@@ -21,6 +21,8 @@ function getValue() {
         nameheading.innerHTML = "Name"
         var name = document.getElementById("yourName");
         name.innerHTML = value.name;
+        name.style.fontFamily = "Times New Roman, Times, serif;";
+        name.style.fontWeight = "bold"
       }
       else {
 
@@ -37,6 +39,8 @@ function getValue() {
         nameheading.innerHTML = "Company"
         var name = document.getElementById("companyName");
         name.innerHTML = value.company;
+        name.style.fontFamily = "Times New Roman, Times, serif;";
+        name.style.fontWeight = "bold"
       }
       else {
 
@@ -73,18 +77,28 @@ function getValue() {
 
 
       if (value.bio) {
-        var bioId = document.getElementById("bioHeading")
-        bioId.innerHTML = "Bio"
-        var bio_info = document.getElementById("bio")
-        bio_info.innerHTML = value.bio
-
-      }
+        var bioId = document.getElementById("bioHeading");
+        bioId.innerHTML = "Bio";
+        bioId.style.textAlign = "center";
+    
+        var bio_info = document.getElementById("bio");
+        bio_info.innerHTML = value.bio;
+    
+        bio_info.style.textAlign = "justify";
+        bio_info.style.marginLeft = "20px";
+        bio_info.style.marginRight = "20px";
+        bio_info.style.fontFamily = "Times New Roman, Times, serif;";
+        bio_info.style.fontWeight = "bold"
+        bio_info.style.color = "orange"
+    }
+    
 
       else {
 
         var bioId = document.getElementById("bioHeading");
         var bio_info = document.getElementById("bio")
-        bio_info.textContent = "Bio";
+        bioId.textContent = "Bio";
+        bioId.style.textAlign="center"
         bio_info.innerHTML = "Not Found";
         bio_info.style.color = "orange"
         bio_info.style.fontSize = "20px"
@@ -111,7 +125,7 @@ function getValue() {
 
     })
     .catch((error) => {
-      // console.error("Error fetching GitHub data:", error);
+      console.error("Error fetching GitHub data:", error);
       errorContainer.textContent = "Error: " + error.message;
       userCard.style.display = "none";
     });
